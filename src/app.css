@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  text-align: left;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #34495e;
+}
+
+.navbar a.active {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.content-section h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.content-section ul {
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.skill-badge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.github-link:hover {
+  background-color: #2980b9;
+}
